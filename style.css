@@ -11,7 +11,7 @@ body {
 }
 
 /* Custom cursor */
-.cursor {
+/* .cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@ body {
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease;
-}
+}*/
 
 .cursor.grow {
   width: 18px;
@@ -324,4 +324,5 @@ body {
     flex-direction: column;
   }
 }
+
 
