@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ND TSA</title>
+
+    <!-- Manrope font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+
+    <!-- Top banner -->
+    <div id="top-banner">
+      <div class="scroll-container">
+        <a id="bannerText" href="#affiliation"></a>
+      </div>
+
+      <div class="tsa-links">
+        <a href="https://tsaweb.org">National TSA</a>
+        <a href="https://store.tsaweb.org">TSA Store</a>
+      </div>
+    </div>
+
+    <!-- Sticky navbar -->
+    <nav id="main-nav">
+      <div class="logo">
+        <img src="/TSA_logo_white.png" />
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Events</li>
+        <li>Members & Membership</li>
+        <li>Partners</li>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Contact Us</li>
+      </ul>
+      <ul class="mobile-nav" id="mobileNav">
+        <li>Home</li>
+        <li>Events</li>
+        <li>Members & Membership</li>
+        <li>Partners</li>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+      <img src="hero.jpg" alt="Hero Banner" />
+    </div>
+
+    <!-- Social sidebar -->
+    <ul class="social-sidebar">
+      <li
+        onclick="window.open('https://www.instagram.com/northdakotatsa/', '_blank')"
+      >
+        <i class="fab fa-instagram"></i>
+      </li>
+      <li
+        onclick="window.open('https://www.facebook.com/NDTechnologyStudentAssociation', '_blank')"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </li>
+      <li
+        onclick="window.open('https://www.youtube.com/channel/UCLKlg1XG64IHVcLZg6x4N-A', '_blank')"
+      >
+        <i class="fab fa-youtube"></i>
+      </li>
+    </ul>
+
+    <section class="info-section">
+      <div class="info-block">
+        <div class="text">
+          <h2>ABOUT</h2>
+          <h3>What is TSA?</h3>
+          <p>
+            Started in 1987, the Technology Student Association (TSA) is an
+            international student-run non-profit organization created to develop
+            skills and career opportunities in Science, Engineering,
+            Mathematics, and business education. Over 250,000+ students from
+            2,000 nationwide chapters learn to become future engineers,
+            scientists, and technologists through TSA's competitive events,
+            leadership opportunities, and integrated educational programs.
+          </p>
+        </div>
+        <div class="image">
+          <img src="tsa-conference.jpg" alt="2024 National TSA Conference" />
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="image">
+          <img src="tsa-meeting.jpg" alt="A TSA Meeting at ND TSA" />
+        </div>
+        <div class="text">
+          <h2>North Dakota TSA</h2>
+          <p>
+            North Dakota TSA is a student organization that is part of the
+            national Technology Student Association (TSA). It is designed to
+            help students develop leadership skills, technical skills, and
+            career opportunities in science, technology, engineering, and
+            mathematics (STEM) fields. North Dakota TSA provides students with
+            opportunities to participate in competitive events, attend
+            conferences and workshops, and engage in community service projects.
+            The organization is open to middle school and high school students
+            who are interested in pursuing careers in STEM fields.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p id="contact-name"></p>
+          <p>
+            Email:
+            <a id="contact-email" href="#"></a>
+          </p>
+          <p>
+            Office:
+            <a id="contact-phone" href="#"></a>
+          </p>
+          <p id="contact-address"></p>
+        </div>
+
+        <!-- Optional banner element -->
+        <div class="banner"></div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">TSA – Middle School</a></li>
+            <li><a href="#">TSA – High School</a></li>
+            <li><a href="#">Competitive Events</a></li>
+            <li><a href="#">Calendar</a></li>
+          </ul>
+        </div>
+
+        <!-- ND TSA Description -->
+        <div class="footer-description">
+          <h3>About ND TSA</h3>
+          <p>
+            North Dakota TSA is sponsored as part of Career and Technical
+            Education programs through the ND Department of Career and Technical
+            Education.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="footer-note">Built for ND TSA © ND TSA 2025</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
