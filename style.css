@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 8px;
   height: 8px;
-  background-color: black;
+  background-color: #121212;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -324,3 +324,4 @@ body {
     flex-direction: column;
   }
 }
+
