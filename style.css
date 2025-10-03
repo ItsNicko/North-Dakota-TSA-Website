@@ -241,7 +241,7 @@ body {
 }
 
 .social-sidebar li {
-  background-color: #175ba7;
+  background-color: #e0402b;
   color: white;
   width: 50px;
   height: 50px;
@@ -356,3 +356,4 @@ body {
     flex-direction: column;
   }
 }
+
