@@ -1,7 +1,7 @@
 // Load config.json once
 fetch("config.json")
-  .then(response => response.json())
-  .then(config => {
+  .then((response) => response.json())
+  .then((config) => {
     // Banner logic
     const banner = document.getElementById("bannerText");
     if (banner && config.Banner) {
@@ -20,7 +20,9 @@ fetch("config.json")
         <h3>Contact</h3>
         <p>${contact.Name}</p>
         <p>Email: <a href="mailto:${contact.Email}">${contact.Email}</a></p>
-        <p>Office: <a href="tel:${contact.Phone}">${formatPhone(contact.Phone)}</a></p>
+        <p>Office: <a href="tel:${contact.Phone}">${formatPhone(
+        contact.Phone
+      )}</a></p>
         <p>Address: ${contact.Address.join("<br />")}</p>
       `;
     }
@@ -29,7 +31,7 @@ fetch("config.json")
     const links = config.QuickLinks;
     const quickLinksList = document.getElementById("quick-links-list");
     if (quickLinksList && Array.isArray(links)) {
-      links.forEach(link => {
+      links.forEach((link) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
         a.href = link.url;
@@ -39,7 +41,7 @@ fetch("config.json")
       });
     }
   })
-  .catch(error => console.error("Error loading config.json:", error));
+  .catch((error) => console.error("Error loading config.json:", error));
 
 // Helper to format phone number
 function formatPhone(phone) {
@@ -60,8 +62,10 @@ function toggleMobileNav() {
 
 // Custom cursor logic
 const cursor = document.querySelector(".cursor");
-let mouseX = 0, mouseY = 0;
-let currentX = 0, currentY = 0;
+let mouseX = 0,
+  mouseY = 0;
+let currentX = 0,
+  currentY = 0;
 
 document.addEventListener("mousemove", (e) => {
   mouseX = e.clientX;
@@ -79,9 +83,11 @@ function animateCursor() {
 animateCursor();
 
 // Grow effect on hover
-document.querySelectorAll(
-  "a, button, .nav-links li, .mobile-nav li, .social-sidebar li, .social-sidebar li i"
-).forEach((el) => {
-  el.addEventListener("mouseenter", () => cursor.classList.add("grow"));
-  el.addEventListener("mouseleave", () => cursor.classList.remove("grow"));
-});
+document
+  .querySelectorAll(
+    "a, button, .nav-links li, .mobile-nav li, .social-sidebar li, .social-sidebar li i"
+  )
+  .forEach((el) => {
+    el.addEventListener("mouseenter", () => cursor.classList.add("grow"));
+    el.addEventListener("mouseleave", () => cursor.classList.remove("grow"));
+  });

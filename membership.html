@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ND TSA — Membership</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="TSA-Technology-Student-Association-Emblem.png"
+    />
+
+    <!-- Manrope font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top banner -->
+    <div id="top-banner">
+      <div class="scroll-container">
+        <a id="bannerText" href="#affiliation">North Dakota TSA — Membership</a>
+      </div>
+
+      <div class="tsa-links">
+        <a href="https://tsaweb.org" target="_blank" rel="noopener"
+          >National TSA</a
+        >
+        <a href="https://store.tsaweb.org" target="_blank" rel="noopener"
+          >TSA Store</a
+        >
+      </div>
+    </div>
+
+    <!-- Sticky navbar -->
+    <nav id="main-nav">
+      <div class="logo">
+        <img src="TSA_logo_white.png" alt="ND TSA logo" />
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Events</li>
+        <li>Competitions</li>
+        <li class="active">Membership</li>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Support Us</li>
+      </ul>
+      <ul class="mobile-nav" id="mobileNav">
+        <li>Home</li>
+        <li>Events</li>
+        <li>Competitions</li>
+        <li class="active">Membership</li>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Support Us</li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section class="hero">
+        <div class="container">
+          <h1>Membership</h1>
+          <p class="lead">
+            Join ND TSA — opportunities for competition, leadership, and career
+            exploration.
+          </p>
+        </div>
+      </section>
+
+      <section class="membership-overview container">
+        <h2>Become a Member</h2>
+        <p>
+          Register your chapter and members through the TSA membership portal.
+          For chapter-level registration use the link below. Individual chapters
+          and students should coordinate with their local CTSO advisor.
+        </p>
+
+        <p>
+          Chapter registration:
+          <a
+            href="https://tsamembership.registermychapter.com/#"
+            target="_blank"
+            rel="noopener"
+            >tsamembership.registermychapter.com</a
+          >
+        </p>
+
+        <h3>Benefits of membership include:</h3>
+        <ul class="benefits-list">
+          <li>Local, state, and national competitive events</li>
+          <li>Career awareness opportunities</li>
+          <li>21st century leadership skills activities</li>
+          <li>Technology literacy development</li>
+          <li>National service project</li>
+          <li>Networking activities</li>
+          <li>Scholarship and award opportunities</li>
+        </ul>
+
+        <div class="quick-links">
+          <h3>Important Forms & Links</h3>
+          <ul class="benefits-list">
+            <li>
+              <a
+                href="https://www.northdakotatsa.org/_files/ugd/936c43_e44a9029001e4c12bf65c5e3946ec9f5.pdf"
+                target="_blank"
+                rel="noopener"
+                >State Officer Code of Conduct (PDF)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.northdakotatsa.org/_files/ugd/b0331c_688247488456486e92c552cfa0cef934.pdf"
+                target="_blank"
+                rel="noopener"
+                >Consent & Multiple Release Form (PDF)</a
+              >
+            </li>
+          </ul>
+          <div class="cta-buttons">
+            <a
+              class="btn"
+              href="https://tsamembership.registermychapter.com/#"
+              target="_blank"
+              rel="noopener"
+              >Register Chapter</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="officer-section container">
+        <h2>State Officer Information</h2>
+        <p>
+          Interested in serving as a North Dakota TSA State Officer? Review the
+          Code of Conduct and Candidate Packet, then submit your application
+          using the State Officer Candidate Form.
+        </p>
+
+        <p>Please review these documents before applying:</p>
+        <ul class="benefits-list">
+          <li>
+            <a
+              href="https://www.northdakotatsa.org/_files/ugd/936c43_e44a9029001e4c12bf65c5e3946ec9f5.pdf"
+              target="_blank"
+              rel="noopener"
+              >State Officer Code of Conduct (PDF)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.northdakotatsa.org/_files/ugd/b0331c_688247488456486e92c552cfa0cef934.pdf"
+              target="_blank"
+              rel="noopener"
+              >Consent & Multiple Release Form (PDF)</a
+            >
+          </li>
+        </ul>
+
+        <div class="cta-buttons">
+          <a
+            class="btn primary"
+            href="https://www.cognitoforms.com/NDCTE1/_2025NDTSAStateOfficerCandidateForm"
+            target="_blank"
+            rel="noopener"
+            >Open Candidate Form</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p id="contact-name"></p>
+          <p>
+            Email:
+            <a id="contact-email" href="#"></a>
+          </p>
+          <p>
+            Office:
+            <a id="contact-phone" href="#"></a>
+          </p>
+          <p id="contact-address"></p>
+        </div>
+
+        <!-- Optional banner element -->
+        <div class="banner"></div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul id="quick-links-list"></ul>
+        </div>
+
+        <!-- ND TSA Description -->
+        <div class="footer-description">
+          <h3>About ND TSA</h3>
+          <p>
+            North Dakota TSA is sponsored as part of Career and Technical
+            Education programs through the ND Department of Career and Technical
+            Education.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="footer-note">Built for ND TSA © ND TSA 2025</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

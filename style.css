@@ -357,3 +357,114 @@ body {
   }
 }
 
+/* Membership page adjustments — match surrounding site design */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Use the same light/clean presentation as other info sections */
+.hero {
+  background: transparent;
+  color: inherit;
+  padding: 28px 0;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  color: #175ba7;
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.hero .lead {
+  color: #333;
+  font-size: 1rem;
+}
+
+.membership-overview,
+.officer-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 22px;
+  border: 1px solid rgba(23, 91, 167, 0.06);
+  margin-bottom: 18px;
+}
+
+.membership-overview h2,
+.officer-section h2 {
+  color: #175ba7;
+  margin-bottom: 10px;
+}
+
+/* Simple, site-consistent benefits list */
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0 18px 0;
+}
+
+.benefits-list li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.benefits-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e0402b;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quick-links li {
+  margin-bottom: 8px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #175ba7;
+  color: #fff;
+  border: none;
+}
+
+.btn.secondary {
+  background: #fff;
+  color: #175ba7;
+  border: 1px solid rgba(23, 91, 167, 0.12);
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 56px;
+  }
+
+  .hero {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ND TSA</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="TSA-Technology-Student-Association-Emblem.png"
+    />
+
+    <!-- Manrope font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <!-- <div class="cursor"></div> -->
+
+    <!-- Top banner -->
+    <div id="top-banner">
+      <div class="scroll-container">
+        <a id="bannerText" href="#affiliation"></a>
+      </div>
+
+      <div class="tsa-links">
+        <a href="https://tsaweb.org">National TSA</a>
+        <a href="https://store.tsaweb.org">TSA Store</a>
+      </div>
+    </div>
+
+    <!-- Sticky navbar -->
+    <nav id="main-nav">
+      <div class="logo">
+        <img src="TSA_logo_white.png" />
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Events</li>
+        <li>Competitions</li>
+        <li>Membership</li>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Support Us</li>
+      </ul>
+      <ul class="mobile-nav" id="mobileNav">
+        <li>Home</li>
+        <li>Events</li>
+        <li>Competitions</li>
+        <li>Membership</li>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Support Us</li>
+      </ul>
+    </nav>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p id="contact-name"></p>
+          <p>
+            Email:
+            <a id="contact-email" href="#"></a>
+          </p>
+          <p>
+            Office:
+            <a id="contact-phone" href="#"></a>
+          </p>
+          <p id="contact-address"></p>
+        </div>
+
+        <!-- Optional banner element -->
+        <div class="banner"></div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul id="quick-links-list"></ul>
+        </div>
+
+        <!-- ND TSA Description -->
+        <div class="footer-description">
+          <h3>About ND TSA</h3>
+          <p>
+            North Dakota TSA is sponsored as part of Career and Technical
+            Education programs through the ND Department of Career and Technical
+            Education.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="footer-note">Built for ND TSA © ND TSA 2025</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
