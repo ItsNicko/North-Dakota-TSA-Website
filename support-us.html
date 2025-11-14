@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support Us - ND TSA</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="TSA-Technology-Student-Association-Emblem.png"
+    />
+
+    <!-- Manrope font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Support Us page specific styles */
+      .hero-section {
+        background: linear-gradient(135deg, #175ba7 0%, #0d3d7a 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .hero-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .hero-section .subheadline {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.95;
+      }
+
+      .cta-button-group {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 14px 28px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .cta-button.primary {
+        background-color: #e0402b;
+        color: white;
+      }
+
+      .cta-button.primary:hover {
+        background-color: #c2321f;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(224, 64, 43, 0.3);
+      }
+
+      .cta-button.secondary {
+        background-color: transparent;
+        color: white;
+        border-color: white;
+      }
+
+      .cta-button.secondary:hover {
+        background-color: white;
+        color: #175ba7;
+      }
+
+      .main-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px 40px 20px;
+      }
+
+      .section {
+        margin-bottom: 50px;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        color: #175ba7;
+        margin-bottom: 20px;
+        font-weight: 700;
+        border-bottom: 3px solid #e0402b;
+        padding-bottom: 10px;
+      }
+
+      .section-description {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .section-content {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid rgba(23, 91, 167, 0.06);
+      }
+
+      .highlight-box {
+        background: #f5f5f5;
+        padding: 20px;
+        border-left: 4px solid #e0402b;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+
+      .tsa-description {
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid rgba(23, 91, 167, 0.06);
+        margin-bottom: 20px;
+      }
+
+      .tsa-description h3 {
+        color: #175ba7;
+        margin-bottom: 12px;
+        font-size: 1.2rem;
+      }
+
+      .tsa-description p {
+        color: #333;
+        line-height: 1.8;
+        margin-bottom: 10px;
+      }
+
+      .sponsorship-levels {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .sponsorship-card {
+        background: white;
+        padding: 22px;
+        border-radius: 8px;
+        border-left: 4px solid;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .sponsorship-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .platinum-card {
+        border-left-color: #d4af37;
+      }
+
+      .platinum-card .level-name {
+        color: #d4af37;
+      }
+
+      .gold-card {
+        border-left-color: #ffd700;
+      }
+
+      .gold-card .level-name {
+        color: #b8860b;
+      }
+
+      .silver-card {
+        border-left-color: #c0c0c0;
+      }
+
+      .silver-card .level-name {
+        color: #708090;
+      }
+
+      .bronze-card {
+        border-left-color: #cd7f32;
+      }
+
+      .bronze-card .level-name {
+        color: #8b4513;
+      }
+
+      .exhibitor-card {
+        border-left-color: #175ba7;
+      }
+
+      .exhibitor-card .level-name {
+        color: #175ba7;
+      }
+
+      .level-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .level-price {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #175ba7;
+        margin-bottom: 12px;
+      }
+
+      .level-benefits {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .level-benefits li {
+        padding: 6px 0;
+        color: #333;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .sponsors-list {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid rgba(23, 91, 167, 0.06);
+      }
+
+      .sponsor-tier {
+        margin-bottom: 25px;
+      }
+
+      .sponsor-tier-name {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #175ba7;
+        margin-bottom: 10px;
+      }
+
+      .sponsor-names {
+        color: #333;
+        line-height: 1.8;
+        padding-left: 20px;
+      }
+
+      .payment-section {
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid rgba(23, 91, 167, 0.06);
+      }
+
+      .payment-address {
+        background: #f5f5f5;
+        padding: 15px;
+        border-radius: 4px;
+        font-style: italic;
+        color: #333;
+        margin-top: 15px;
+        line-height: 1.8;
+      }
+
+      .form-link {
+        display: inline-block;
+        color: #175ba7;
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 2px solid #e0402b;
+        transition: all 0.3s ease;
+      }
+
+      .form-link:hover {
+        color: #e0402b;
+      }
+
+      @media (max-width: 768px) {
+        .hero-section h1 {
+          font-size: 1.8rem;
+        }
+
+        .hero-section .subheadline {
+          font-size: 1rem;
+        }
+
+        .cta-button-group {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cta-button {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        .section-title {
+          font-size: 1.4rem;
+        }
+
+        .sponsorship-levels {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top banner -->
+    <div id="top-banner">
+      <div class="scroll-container">
+        <a id="bannerText" href="#affiliation"></a>
+      </div>
+
+      <div class="tsa-links">
+        <a href="https://tsaweb.org">National TSA</a>
+        <a href="https://store.tsaweb.org">TSA Store</a>
+      </div>
+    </div>
+
+    <!-- Sticky navbar -->
+    <nav id="main-nav">
+      <div class="logo">
+        <a href="index.html"><img src="TSA_logo_white.png" /></a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu">
+            <a href="competitions.html" class="dropdown-link">Competitions</a>
+            <a href="middle-school-competitions.html" class="dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
+      </ul>
+      <ul class="mobile-nav" id="mobileNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu">
+            <a href="competitions.html" class="mobile-dropdown-link"
+              >Competitions</a
+            >
+            <a
+              href="middle-school-competitions.html"
+              class="mobile-dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>Support North Dakota TSA & Participate as a Judge</h1>
+      <p class="subheadline">
+        Engage with STEM students and help make our conferences possible.
+      </p>
+      <div class="cta-button-group">
+        <a
+          href="https://cognitoforms.com/ndcte1/_2025tsastateconferencejudges"
+          class="cta-button primary"
+          >Sign Up as a Judge</a
+        >
+        <a
+          href="https://cognitoforms.com/NDCTE1/_2025TSALeadershipConferenceSponsorshipRegistration"
+          class="cta-button secondary"
+          >Become a Sponsor</a
+        >
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Section 1: Conference Judges -->
+      <section class="section">
+        <h2 class="section-title">Conference Judges</h2>
+        <div class="section-content">
+          <p class="section-description">
+            Participating as a judge at events presents a valuable and
+            fulfilling opportunity. Judging is essential to our conferences, and
+            many judges return year after year.
+          </p>
+          <div class="highlight-box">
+            <strong>Sign Up to Judge:</strong> Complete the Judges Form at
+            <a href="#" class="form-link" id="judges-form-link"
+              >cognitoforms.com/ndcte1/_2025tsastateconferencejudges</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: About TSA -->
+      <section class="section">
+        <h2 class="section-title">About TSA</h2>
+        <div class="tsa-description">
+          <h3>The Technology Student Association (TSA)</h3>
+          <p>
+            TSA is a national non-profit CTSO of middle and high school students
+            engaged in STEM. Over 300,000 students participate in competitions,
+            leadership opportunities, and community service.
+          </p>
+        </div>
+        <div class="tsa-description">
+          <h3>North Dakota TSA</h3>
+          <ul style="list-style: disc; margin-left: 20px; color: #333">
+            <li>Partners with businesses and organizations</li>
+            <li>Offers statewide conferences and events</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 3: Sponsorship Opportunities -->
+      <section class="section">
+        <h2 class="section-title">Sponsorship Opportunities</h2>
+        <div class="section-content">
+          <p class="section-description">
+            Support North Dakota TSA and connect with STEM students. Exhibitors
+            and sponsors help make our events possible. All sponsorships require
+            completing the sponsorship registration form before submitting
+            payment.
+          </p>
+          <div class="highlight-box">
+            <strong>Register as a Sponsor:</strong> Complete the Sponsorship
+            Form at
+            <a href="#" class="form-link" id="sponsorship-form-link"
+              >cognitoforms.com/NDCTE1/_2025TSALeadershipConferenceSponsorshipRegistration</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Exhibits & Program Ads -->
+      <section class="section">
+        <h2 class="section-title">Exhibits & Program Ads</h2>
+        <div class="section-content">
+          <p class="section-description">
+            <strong
+              >Exhibitors must relate to technology, engineering, or student
+              resources.</strong
+            >
+          </p>
+          <p class="section-description">
+            This is a valuable opportunity for industry, colleges, and
+            universities to meet and engage with TSA students.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 5: Major Events & Conferences -->
+      <section class="section">
+        <h2 class="section-title">Major Events & Conferences</h2>
+        <div class="section-content">
+          <ul
+            class="benefits-list"
+            style="margin: 0"
+            id="major-events-list"
+          ></ul>
+        </div>
+      </section>
+
+      <!-- Section 6: Sponsorship Levels -->
+      <section class="section">
+        <h2 class="section-title">Sponsorship Levels</h2>
+        <div class="sponsorship-levels" id="sponsorship-levels-container"></div>
+      </section>
+
+      <!-- Section 7: 2024-2025 Sponsors -->
+      <section class="section">
+        <h2 class="section-title">2024–2025 Sponsors</h2>
+        <div class="sponsors-list" id="sponsors-list-container"></div>
+      </section>
+
+      <!-- Section 8: Payment Information -->
+      <section class="section">
+        <h2 class="section-title">Payment Information</h2>
+        <div class="payment-section">
+          <p class="section-description">
+            For general payments such as memberships or other TSA contributions,
+            please send payments to the address below. Sponsorships must be
+            submitted via the sponsorship form and cannot be paid directly to
+            this address.
+          </p>
+          <div class="payment-address" id="payment-address-container"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p id="contact-name"></p>
+          <p>
+            Email:
+            <a id="contact-email" href="#"></a>
+          </p>
+          <p>
+            Office:
+            <a id="contact-phone" href="#"></a>
+          </p>
+          <p id="contact-address"></p>
+        </div>
+
+        <!-- Optional banner element -->
+        <div class="banner"></div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul id="quick-links-list"></ul>
+        </div>
+
+        <!-- ND TSA Description -->
+        <div class="footer-description">
+          <h3>About ND TSA</h3>
+          <p>
+            North Dakota TSA is sponsored as part of Career and Technical
+            Education programs through the ND Department of Career and Technical
+            Education.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="footer-note">Built for ND TSA © ND TSA 2025</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Load support-us.json
+      fetch("support-us.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Populate form links
+          const judgesFormLink = document.getElementById("judges-form-link");
+          const sponsorshipFormLink = document.getElementById(
+            "sponsorship-form-link"
+          );
+
+          if (judgesFormLink) judgesFormLink.href = data.formLinks.judges;
+          if (sponsorshipFormLink)
+            sponsorshipFormLink.href = data.formLinks.sponsorship;
+
+          // Populate major events
+          const majorEventsList = document.getElementById("major-events-list");
+          if (majorEventsList && data.majorEvents) {
+            majorEventsList.innerHTML = data.majorEvents
+              .map(
+                (event) =>
+                  `<li><strong>${event.name}</strong> – ${event.description}</li>`
+              )
+              .join("");
+          }
+
+          // Populate sponsorship levels
+          const sponsorshipContainer = document.getElementById(
+            "sponsorship-levels-container"
+          );
+          if (sponsorshipContainer && data.sponsorshipLevels) {
+            const levelClasses = {
+              Platinum: "platinum-card",
+              Gold: "gold-card",
+              Silver: "silver-card",
+              Bronze: "bronze-card",
+              "Exhibitor Only": "exhibitor-card",
+            };
+
+            sponsorshipContainer.innerHTML = data.sponsorshipLevels
+              .map(
+                (level) =>
+                  `
+              <div class="sponsorship-card ${levelClasses[level.name]}">
+                <div class="level-name">${level.name}</div>
+                <div class="level-price">$${level.price.toLocaleString()}</div>
+                <ul class="level-benefits">
+                  ${level.benefits
+                    .map((benefit) => `<li>✓ ${benefit}</li>`)
+                    .join("")}
+                </ul>
+              </div>
+            `
+              )
+              .join("");
+          }
+
+          // Populate sponsors
+          const sponsorsList = document.getElementById(
+            "sponsors-list-container"
+          );
+          if (sponsorsList && data.currentSponsors) {
+            const tiers = [
+              { name: "Platinum", key: "platinum" },
+              { name: "Gold", key: "gold" },
+              { name: "Silver", key: "silver" },
+              { name: "Bronze", key: "bronze" },
+            ];
+
+            sponsorsList.innerHTML = tiers
+              .map((tier) => {
+                const sponsors = data.currentSponsors[tier.key];
+                if (sponsors && sponsors.length > 0) {
+                  return `
+                <div class="sponsor-tier">
+                  <div class="sponsor-tier-name">${tier.name}</div>
+                  <div class="sponsor-names">${sponsors.join(", ")}</div>
+                </div>
+              `;
+                }
+                return "";
+              })
+              .join("");
+          }
+
+          // Populate payment address
+          const paymentAddressContainer = document.getElementById(
+            "payment-address-container"
+          );
+          if (paymentAddressContainer && data.paymentAddress) {
+            paymentAddressContainer.innerHTML = `
+            ${data.paymentAddress.organization}<br />
+            ${data.paymentAddress.poBox}<br />
+            ${data.paymentAddress.city}
+          `;
+          }
+        })
+        .catch((error) =>
+          console.error("Error loading support-us.json:", error)
+        );
+    </script>
+  </body>
+</html>

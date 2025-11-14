@@ -1,34 +1,47 @@
 {
-    "QuickLinks": [
+  "QuickLinks": [
     {
-      "title": "TSA – Middle School",
-      "url": "#"
+      "title": "Middle School Competitions",
+      "url": "middle-school-competitions.html"
     },
     {
-      "title": "TSA – High School",
-      "url": "#"
+      "title": "High School Competitions",
+      "url": "competitions.html"
     },
     {
-      "title": "Competitive Events",
-      "url": "#"
+      "title": "Events",
+      "url": "events.html"
     },
     {
-      "title": "Calendar",
-      "url": "#"
+      "title": "Membership",
+      "url": "membership.html"
+    }
+  ],
+  "Resources": [
+    {
+      "title": "National TSA Website",
+      "url": "https://tsaweb.org"
+    },
+    {
+      "title": "TSA Store",
+      "url": "https://store.tsaweb.org"
+    },
+    {
+      "title": "Chapter Registration",
+      "url": "https://tsamembership.registermychapter.com/"
+    },
+    {
+      "title": "STEM Standards",
+      "url": "https://tsaweb.org/programs/standards"
     }
   ],
   "Contact": {
     "Name": "Bradley Hoffarth, ND TSA State Advisor",
     "Email": "tsa@nd.gov",
     "Phone": "7013283159",
-    "Address": [
-      "600 E Boulevard Ave",
-      "Dept. 270 Bismarck",
-      "ND 58505-0610"
-    ]
+    "Address": ["600 E Boulevard Ave", "Dept. 270 Bismarck", "ND 58505-0610"]
   },
   "Banner": "2024-2025 TSA Chapter Affiliation Opens On: 09/09/2024",
   "BannerLink": "https://tsamembership.registermychapter.com/",
   "BannerRedirect": false
 }
-

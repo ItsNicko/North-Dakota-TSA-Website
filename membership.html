@@ -44,7 +44,9 @@
     <!-- Sticky navbar -->
     <nav id="main-nav">
       <div class="logo">
-        <img src="TSA_logo_white.png" alt="ND TSA logo" />
+        <a href="index.html"
+          ><img src="TSA_logo_white.png" alt="ND TSA logo"
+        /></a>
       </div>
       <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
         <span></span>
@@ -52,22 +54,60 @@
         <span></span>
       </div>
       <ul class="nav-links">
-        <li>Home</li>
-        <li>Events</li>
-        <li>Competitions</li>
-        <li class="active">Membership</li>
-        <li>About</li>
-        <li>Resources</li>
-        <li>Support Us</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu">
+            <a href="competitions.html" class="dropdown-link">Competitions</a>
+            <a href="middle-school-competitions.html" class="dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
       </ul>
       <ul class="mobile-nav" id="mobileNav">
-        <li>Home</li>
-        <li>Events</li>
-        <li>Competitions</li>
-        <li class="active">Membership</li>
-        <li>About</li>
-        <li>Resources</li>
-        <li>Support Us</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu">
+            <a href="competitions.html" class="mobile-dropdown-link"
+              >Competitions</a
+            >
+            <a
+              href="middle-school-competitions.html"
+              class="mobile-dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li class="active"><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
       </ul>
     </nav>
 

@@ -43,7 +43,7 @@
     <!-- Sticky navbar -->
     <nav id="main-nav">
       <div class="logo">
-        <img src="TSA_logo_white.png" />
+        <a href="index.html"><img src="TSA_logo_white.png" /></a>
       </div>
       <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
         <span></span>
@@ -51,22 +51,60 @@
         <span></span>
       </div>
       <ul class="nav-links">
-        <li>Home</li>
-        <li>Events</li>
-        <li>Competitions</li>
-        <li>Membership</li>
-        <li>About</li>
-        <li>Resources</li>
-        <li>Support Us</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu">
+            <a href="competitions.html" class="dropdown-link">Competitions</a>
+            <a href="middle-school-competitions.html" class="dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
       </ul>
       <ul class="mobile-nav" id="mobileNav">
-        <li>Home</li>
-        <li>Events</li>
-        <li>Competitions</li>
-        <li>Membership</li>
-        <li>About</li>
-        <li>Resources</li>
-        <li>Support Us</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu">
+            <a href="competitions.html" class="mobile-dropdown-link"
+              >Competitions</a
+            >
+            <a
+              href="middle-school-competitions.html"
+              class="mobile-dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
       </ul>
     </nav>
 
@@ -132,27 +170,34 @@
             who are interested in pursuing careers in STEM fields.
           </p>
         </div>
+      </div>
 
       <div class="info-block">
         <div class="text">
           <h2>Why You Should Join TSA?</h2>
           <p>
-            The Technology Student Association (TSA) provides student
-             members the opportunity to explore a wide variety of STEM 
-             (science, technology, engineering, and mathematics) education 
-             and career-interest areas.</p>
-             <br> 
-            <p>All TSA middle school competitions and high school competitions
-             are correlated with national STEM standards and can be integrated 
-             into and enhance a school STEM curriculum. Participation in TSA 
-             competitions allows TSA members to apply technology and engineering skills in 
-             challenging and innovative ways.  Working individually or as a team, TSA members are 
-             motivated by the inspiration and enthusiasm gained from being recognized for the 
-             successful application of those skills.  
+            The Technology Student Association (TSA) provides student members
+            the opportunity to explore a wide variety of STEM (science,
+            technology, engineering, and mathematics) education and
+            career-interest areas.
+          </p>
+          <br />
+          <p>
+            All TSA middle school competitions and high school competitions are
+            correlated with national STEM standards and can be integrated into
+            and enhance a school STEM curriculum. Participation in TSA
+            competitions allows TSA members to apply technology and engineering
+            skills in challenging and innovative ways. Working individually or
+            as a team, TSA members are motivated by the inspiration and
+            enthusiasm gained from being recognized for the successful
+            application of those skills.
           </p>
         </div>
-                <div class="image">
-          <img src="tsa-meeting.jpg" alt="2025 TSA group at TSA Nationals" />
+        <div class="image">
+          <img
+            src="tsa-group-photo.jpg"
+            alt="2025 TSA group at TSA Nationals"
+          />
         </div>
       </div>
     </section>

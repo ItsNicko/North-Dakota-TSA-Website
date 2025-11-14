@@ -1,0 +1,141 @@
+{
+  "missionStatement": "The mission of the North Dakota Technology Student Association is to prepare the membership for the challenges of a dynamic world by promoting technological literacy, leadership, service, and problem solving resulting in personal growth and opportunities.",
+
+  "creed": [
+    "I believe that Technology Education holds an important place in my life in the technical world. I believe there is a need for the development of good attitudes concerning works, materials, experimentation, and processes of industry.",
+    "Guided by my teachers, artisans from industry, and my own initiative, I will strive to do my best in making my school, community, state, and nation better places in which to live.",
+    "I will accept the responsibilities that are mine. I will accept the theories that are supported by proper evidence. I will explore on my own for safer, more effective methods of working and living.",
+    "I will strive to develop a cooperative attitude and will exercise tact and respect for other individuals.",
+    "Through the work of my hands and mind, I will express my ideas to the best of my ability.",
+    "I will make it my goal to do better each day the task before me, and to be steadfast in my belief in my God, and my fellow Americans."
+  ],
+
+  "history": {
+    "founded": 1997,
+    "chartered": "Chartered with National TSA",
+    "startingSchools": 10,
+    "originalChapters": [
+      "A.L. Hagen Junior High School",
+      "Bismarck High School",
+      "Bismarck Century High School",
+      "Dickinson High School",
+      "Horizon Middle School",
+      "Minot Central Campus",
+      "Simle Middle School",
+      "Steele-Dawson High School",
+      "Wachter Middle School",
+      "West Fargo High School"
+    ],
+    "description": "TSA provides students in grades 6–12 with leadership and service opportunities, as well as competitive events in technology and engineering education."
+  },
+
+  "stateOfficers": [
+    {
+      "name": "Ashley Carr",
+      "position": "President",
+      "school": "Minot North High School",
+      "year": "Junior",
+      "image": "images/Ashley_Carr.jpg",
+      "bio": "Hi guys! I'm Ashley Carr, and I'm your 2025-26 NDTSA President. I am so excited to be back this year! It's my third year in TSA and my second year as a state officer. A little bit about me: I'm a junior at Minot North High School. At my school, I'm actively involved in cheerleading, Science Olympiad, Student Council, National Honor Society, and, of course, TSA. In my free time, I enjoy hanging out with friends, playing piano, and serving on my church's worship team. Can't wait for another great year!"
+    },
+    {
+      "name": "Bryce Scholand",
+      "position": "Vice President",
+      "school": "Northwood Public School",
+      "year": "Junior",
+      "image": "images/Bryce_Scholand.jpg",
+      "bio": "Hello, I'm Bryce, your 2025-2026 North Dakota TSA State Vice President! I'm a junior this year and excited to serve as a state officer. This is my third year in TSA, and my favorite part is the Tech Bowl competition. I've also had the honor of qualifying for nationals twice in Children's Story. Outside of my school activities, you can find me on the golf course or at home with my cat, Greg, who loves to play fetch. I'm eager to help make this the best year for North Dakota TSA, and I look forward to meeting all of you!"
+    },
+    {
+      "name": "Victoria Matthews",
+      "position": "Reporter",
+      "school": "Munich High School",
+      "year": "Junior",
+      "image": "images/Victoria_Matthews.jpg",
+      "bio": "My name is Victoria Matthews and I am your 2025-2026 NDTSA State Reporter. I am a Junior at Munich High School. This is my second year in TSA and my first as a state officer. This past year, I competed in too many events to list. Outside of TSA, I participate in golf, softball, and trapshooting. I have placed many times at the state level in shooting, as well as competing at the national level. In my free time, if I'm not shooting, you will most likely find me at the lake, with my friends, or somewhere reading my bible."
+    },
+    {
+      "name": "Jersie Vivier",
+      "position": "Sergeant-at-Arms",
+      "school": "Northwood Public School",
+      "year": "Junior",
+      "image": "images/Jersie_Vivier.jpg",
+      "bio": "Hello, I'm Jersie Vivier, your 2025-2026 NDTSA Sergeant-at-Arms! I'm a Junior at Northwood Public School. This is my second year in TSA, and my first year as a state officer. I enjoy participating in Student Council, Band/Choir, Robotics, Speech, and TSA. I qualified for nationals in Board Game Design this past year! My favorite subject is Math."
+    },
+    {
+      "name": "Kaydence Bodtke",
+      "position": "Treasurer",
+      "school": "Minot North High School",
+      "year": "Junior",
+      "image": "images/Kaydence_Bodtke.jpg",
+      "bio": "Hi, I'm Kaydence Bodtke! I am a Junior at Minot North High School. This is my third year in TSA and first year as a TSA officer. I have qualified for Nationals in Photographic Technology, On-Demand Video, Fashion Technology, and Webmaster. Besides TSA I am also involved in National Honor Society, Student Council, Science Olympiad, and Key Club. In my free time I love to travel, take photos around town, read, and spend time with my friends."
+    },
+    {
+      "name": "Brenden Longie",
+      "position": "Secretary",
+      "school": "Northwood Public School",
+      "year": "Junior",
+      "image": "images/Brenden_Longie.jpg",
+      "bio": "Hello everyone! I'm Brenden Longie, your new 2025-2026 State Secretary. This is my second year in TSA and I'm really excited to be serving as a state officer for the first time. When I'm not focused on my schoolwork or TSA events, you can find me trapshooting, farming, or just hanging out with friends. I'm excited to take on this new journey and work with all of you!"
+    }
+  ],
+
+  "advisoryCouncil": {
+    "current": [
+      {
+        "name": "Dan Houston",
+        "school": "Simle Middle School",
+        "years": "2023-2025"
+      },
+      {
+        "name": "Quenna Beston",
+        "school": "Munich Public School",
+        "years": "2023-2025"
+      },
+      {
+        "name": "Byron Borgen",
+        "school": "Minot North High School",
+        "years": "2023-2025"
+      },
+      {
+        "name": "Justin Foss",
+        "school": "Hatton-Northwood Public Schools",
+        "years": "2023-2025"
+      }
+    ],
+    "past": [
+      {
+        "name": "Dan Houston",
+        "role": "Chair Person",
+        "years": "2021-2022"
+      },
+      {
+        "name": "Quenna Beston",
+        "years": "2021-2022"
+      },
+      {
+        "name": "Byron Borgen",
+        "years": "2021-2022"
+      },
+      {
+        "name": "Justin Foss",
+        "years": "2021-2022"
+      }
+    ]
+  },
+
+  "documents": [
+    {
+      "title": "Constitution",
+      "url": "PDFs/NDTSA-Constitution.pdf"
+    },
+    {
+      "title": "By-Laws",
+      "url": "PDFs/NDTSA-By-Laws.pdf"
+    },
+    {
+      "title": "Code of Conduct & Dress Code",
+      "url": "PDFs/NSTSA-Code-Of-Conduct.pdf"
+    }
+  ]
+}

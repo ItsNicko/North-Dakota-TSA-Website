@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competitions - ND TSA</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="TSA-Technology-Student-Association-Emblem.png"
+    />
+
+    <!-- Manrope font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .competitions-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .competitions-header {
+        margin-bottom: 50px;
+      }
+
+      .competitions-header h1 {
+        color: #175ba7;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .competitions-header p {
+        color: #555;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .search-container {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 14px 40px 14px 16px;
+        font-size: 1rem;
+        border: 2px solid rgba(23, 91, 167, 0.2);
+        border-radius: 8px;
+        background: #fff;
+        font-family: "Manrope", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      .search-input:focus {
+        outline: none;
+        border-color: #175ba7;
+        box-shadow: 0 0 0 3px rgba(23, 91, 167, 0.1);
+      }
+
+      .search-input::placeholder {
+        color: #999;
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #175ba7;
+        pointer-events: none;
+      }
+
+      .competitions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .event-card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 25px;
+        border: 1px solid rgba(23, 91, 167, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .event-card:hover {
+        box-shadow: 0 8px 20px rgba(23, 91, 167, 0.15);
+        transform: translateY(-5px);
+        border-color: #175ba7;
+      }
+
+      .event-card h3 {
+        color: #175ba7;
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .event-card .description {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        flex-grow: 1;
+      }
+
+      .event-card .theme-label {
+        font-weight: 600;
+        color: #175ba7;
+        font-size: 0.85rem;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .event-card .theme {
+        color: #333;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 12px;
+        background: rgba(23, 91, 167, 0.05);
+        border-left: 3px solid #e0402b;
+        border-radius: 4px;
+      }
+
+      .event-card .theme a {
+        color: #175ba7;
+        text-decoration: underline;
+      }
+
+      .event-card .theme a:hover {
+        color: #e0402b;
+      }
+
+      @media (max-width: 768px) {
+        .competitions-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .competitions-header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top banner -->
+    <div id="top-banner">
+      <div class="scroll-container">
+        <a id="bannerText" href="#affiliation"></a>
+      </div>
+
+      <div class="tsa-links">
+        <a href="https://tsaweb.org">National TSA</a>
+        <a href="https://store.tsaweb.org">TSA Store</a>
+      </div>
+    </div>
+
+    <!-- Sticky navbar -->
+    <nav id="main-nav">
+      <div class="logo">
+        <a href="index.html"><img src="TSA_logo_white.png" /></a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu">
+            <a href="competitions.html" class="dropdown-link">Competitions</a>
+            <a href="middle-school-competitions.html" class="dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
+      </ul>
+      <ul class="mobile-nav" id="mobileNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu">
+            <a href="competitions.html" class="mobile-dropdown-link"
+              >Competitions</a
+            >
+            <a
+              href="middle-school-competitions.html"
+              class="mobile-dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="competitions-container">
+      <div class="competitions-header">
+        <h1>2025-2026 Competitions</h1>
+        <p>
+          Explore the wide range of competitions offered by North Dakota TSA.
+          From engineering and design challenges to technology problem-solving
+          and creative competitions, there's something for every student
+          interested in technology and innovation.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search competitions by name, description, or theme..."
+            autocomplete="off"
+          />
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="competitions-grid" id="competitionsGrid">
+        <!-- Events will be populated here by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p id="contact-name"></p>
+          <p>
+            Email:
+            <a id="contact-email" href="#"></a>
+          </p>
+          <p>
+            Office:
+            <a id="contact-phone" href="#"></a>
+          </p>
+          <p id="contact-address"></p>
+        </div>
+
+        <!-- Optional banner element -->
+        <div class="banner"></div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul id="quick-links-list"></ul>
+        </div>
+
+        <!-- ND TSA Description -->
+        <div class="footer-description">
+          <h3>About ND TSA</h3>
+          <p>
+            North Dakota TSA is sponsored as part of Career and Technical
+            Education programs through the ND Department of Career and Technical
+            Education.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="footer-note">Built for ND TSA © ND TSA 2025</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      let allEvents = [];
+
+      // Load events from competitions.json and populate the grid
+      fetch("competitions.json")
+        .then((response) => response.json())
+        .then((events) => {
+          allEvents = events;
+          renderEvents(allEvents);
+
+          // Setup search functionality
+          const searchInput = document.getElementById("searchInput");
+          searchInput.addEventListener("input", (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = allEvents.filter((event) => {
+              const name = event.name.toLowerCase();
+              const description = event.description.toLowerCase();
+              const theme =
+                typeof event.theme === "string"
+                  ? event.theme.toLowerCase()
+                  : event.theme?.text?.toLowerCase() || "";
+
+              return (
+                name.includes(searchTerm) ||
+                description.includes(searchTerm) ||
+                theme.includes(searchTerm)
+              );
+            });
+            renderEvents(filtered);
+          });
+        })
+        .catch((error) =>
+          console.error("Error loading competitions.json:", error)
+        );
+
+      function renderEvents(events) {
+        const competitionsGrid = document.getElementById("competitionsGrid");
+        competitionsGrid.innerHTML = "";
+
+        if (events.length === 0) {
+          competitionsGrid.innerHTML =
+            '<div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #999; font-size: 1.1rem;">No competitions found matching your search.</div>';
+          return;
+        }
+
+        events.forEach((event) => {
+          const card = document.createElement("div");
+          card.className = "event-card";
+
+          // Handle theme - can be string or object with text and url
+          let themeHTML = "";
+          if (typeof event.theme === "string") {
+            themeHTML = `<div class="theme">${event.theme}</div>`;
+          } else if (event.theme && typeof event.theme === "object") {
+            if (event.theme.url) {
+              themeHTML = `<div class="theme"><a href="${event.theme.url}" target="_blank">${event.theme.text}</a></div>`;
+            } else {
+              themeHTML = `<div class="theme">${event.theme.text}</div>`;
+            }
+          }
+
+          card.innerHTML = `
+            <h3>${event.name}</h3>
+            <div class="description">${event.description}</div>
+            <div class="theme-label">Theme:</div>
+            ${themeHTML}
+          `;
+
+          competitionsGrid.appendChild(card);
+        });
+      }
+    </script>
+  </body>
+</html>

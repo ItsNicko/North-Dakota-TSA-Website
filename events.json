@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "name": "State Conference",
+      "location": "Natural Energy Center of Excellence Building, 1200 Schafer Street, Bismarck, ND 58501",
+      "dates": {
+        "start": "2026-03-08",
+        "end": "2026-03-10"
+      },
+      "deadlines": [
+        {
+          "name": "Conference Events Preliminary Deadline",
+          "date": "2026-02-04"
+        },
+        {
+          "name": "Registration and Conference Events Deadline",
+          "date": "2026-02-04",
+          "note": "No New Events Will Be Added After This Date"
+        }
+      ]
+    },
+    {
+      "name": "Fall Leadership Conference",
+      "location": "Valley City State University",
+      "date": "2025-10-06"
+    },
+    {
+      "name": "2026 National TSA Conference",
+      "location": "Gaylord National Resort, Washington DC",
+      "dates": {
+        "start": "2026-06-22",
+        "end": "2026-06-26"
+      },
+      "notes": {
+        "hotel_reservations": "Hotel reservations for the conference will open in January 2026",
+        "conference_registration": "Conference registration will open in March 2026"
+      }
+    }
+  ]
+}

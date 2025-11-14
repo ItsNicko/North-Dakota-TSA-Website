@@ -40,6 +40,44 @@ fetch("config.json")
         quickLinksList.appendChild(li);
       });
     }
+
+    // Resources dropdown logic - Desktop
+    const resources = config.Resources;
+    const desktopResourcesDropdown =
+      document.querySelectorAll(".dropdown-item")[1]; // Resources is the 2nd dropdown-item
+    const desktopDropdownMenu = desktopResourcesDropdown
+      ? desktopResourcesDropdown.querySelector(".dropdown-menu")
+      : null;
+    if (desktopDropdownMenu && Array.isArray(resources)) {
+      resources.forEach((resource) => {
+        const a = document.createElement("a");
+        a.href = resource.url;
+        a.textContent = resource.title;
+        a.className = "dropdown-link";
+        a.target = "_blank";
+        a.rel = "noopener";
+        desktopDropdownMenu.appendChild(a);
+      });
+    }
+
+    // Resources dropdown logic - Mobile
+    const mobileResourcesDropdown = document.querySelectorAll(
+      ".mobile-dropdown-item"
+    )[1]; // Resources is the 2nd dropdown-item
+    const mobileDropdownMenu = mobileResourcesDropdown
+      ? mobileResourcesDropdown.querySelector(".mobile-dropdown-menu")
+      : null;
+    if (mobileDropdownMenu && Array.isArray(resources)) {
+      resources.forEach((resource) => {
+        const a = document.createElement("a");
+        a.href = resource.url;
+        a.textContent = resource.title;
+        a.className = "mobile-dropdown-link";
+        a.target = "_blank";
+        a.rel = "noopener";
+        mobileDropdownMenu.appendChild(a);
+      });
+    }
   })
   .catch((error) => console.error("Error loading config.json:", error));
 
@@ -59,6 +97,15 @@ function toggleMobileNav() {
   document.getElementById("mobileNav").classList.toggle("active");
   document.getElementById("hamburger").classList.toggle("active");
 }
+
+// Mobile dropdown toggle
+document.querySelectorAll(".mobile-dropdown-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    const parent = toggle.closest(".mobile-dropdown-item");
+    parent.classList.toggle("active");
+  });
+});
 
 // Custom cursor logic
 const cursor = document.querySelector(".cursor");
@@ -91,3 +138,49 @@ document
     el.addEventListener("mouseenter", () => cursor.classList.add("grow"));
     el.addEventListener("mouseleave", () => cursor.classList.remove("grow"));
   });
+
+// Load about.json for About page
+fetch("about.json")
+  .then((response) => response.json())
+  .then((aboutData) => {
+    // Load Administrative Team
+    const adminTeamContainer = document.getElementById("admin-team-container");
+    if (adminTeamContainer && aboutData.stateAdvisor) {
+      const advisor = aboutData.stateAdvisor;
+      const textDiv = adminTeamContainer.querySelector(".text");
+      textDiv.innerHTML = `
+        <h2>Administrative Team</h2>
+        <p><strong>State Advisor: ${advisor.name}</strong></p>
+        <p>
+          Email: <a href="mailto:${advisor.email}">${advisor.email}</a> /
+          <a href="mailto:${advisor.email2}">${advisor.email2}</a>
+        </p>
+        <p>Phone: <a href="tel:+1${advisor.phone.replace(/[^\d]/g, "")}">${
+        advisor.phone
+      }</a></p>
+      `;
+    }
+
+    // Load State Officers
+    const officersContainer = document.getElementById("officers-container");
+    if (officersContainer && aboutData.stateOfficers) {
+      officersContainer.innerHTML = aboutData.stateOfficers
+        .map((officer, index) => {
+          const isEvenIndex = index % 2 === 0;
+          const imageHtml = `<div class="image"><img src="${officer.image}" alt="${officer.name} - ${officer.position}" /></div>`;
+          const textHtml = `
+            <div class="text">
+              <h3>${officer.name} – ${officer.position}</h3>
+              <p>"${officer.bio}"</p>
+            </div>
+          `;
+          return `
+            <div class="info-block">
+              ${isEvenIndex ? textHtml + imageHtml : imageHtml + textHtml}
+            </div>
+          `;
+        })
+        .join("");
+    }
+  })
+  .catch((error) => console.error("Error loading about.json:", error));

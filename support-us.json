@@ -1,0 +1,95 @@
+{
+  "paymentAddress": {
+    "organization": "North Dakota TSA",
+    "poBox": "PO Box 6022",
+    "city": "Bismarck, ND 58506-6022"
+  },
+  "majorEvents": [
+    {
+      "name": "State Officer Team Training",
+      "description": "Summer leadership & planning"
+    },
+    {
+      "name": "Professional Development Conference",
+      "description": "Advisor & teacher training"
+    },
+    {
+      "name": "Fall Leadership Conference",
+      "description": "High school & middle school conference"
+    },
+    {
+      "name": "State Career Development Conference",
+      "description": "March, 100+ high school students"
+    }
+  ],
+  "sponsorshipLevels": [
+    {
+      "name": "Platinum",
+      "price": 5000,
+      "benefits": [
+        "Full-page ad",
+        "Listed sponsor",
+        "Logo recognition",
+        "Exhibit space/flyer",
+        "Up to 4 reps",
+        "Negotiable promotion"
+      ]
+    },
+    {
+      "name": "Gold",
+      "price": 2500,
+      "benefits": [
+        "Half-page ad",
+        "Listed sponsor",
+        "Logo recognition",
+        "Exhibit space/flyer",
+        "Up to 2 reps"
+      ]
+    },
+    {
+      "name": "Silver",
+      "price": 1000,
+      "benefits": [
+        "Logo recognition in program",
+        "Recognition on screens",
+        "Website recognition",
+        "Social media recognition",
+        "Cluster signage"
+      ]
+    },
+    {
+      "name": "Bronze",
+      "price": 500,
+      "benefits": [
+        "Logo recognition on screens",
+        "Website recognition",
+        "Social media recognition",
+        "Cluster signage"
+      ]
+    },
+    {
+      "name": "Exhibitor Only",
+      "price": 150,
+      "benefits": [
+        "Listed in program",
+        "One 8-foot table",
+        "Two chairs",
+        "Electricity if needed"
+      ]
+    }
+  ],
+  "currentSponsors": {
+    "platinum": ["ND STEM Ecosystem"],
+    "gold": ["Acme Tools", "Brosz Engineering"],
+    "silver": [],
+    "bronze": [
+      "Bismarck Mandan CVB",
+      "Burian Associates",
+      "ND State College of Science"
+    ]
+  },
+  "formLinks": {
+    "judges": "https://cognitoforms.com/ndcte1/_2025tsastateconferencejudges",
+    "sponsorship": "https://cognitoforms.com/NDCTE1/_2025TSALeadershipConferenceSponsorshipRegistration"
+  }
+}

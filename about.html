@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About ND TSA</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="TSA-Technology-Student-Association-Emblem.png"
+    />
+
+    <!-- Manrope font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <!-- <div class="cursor"></div> -->
+
+    <!-- Top banner -->
+    <div id="top-banner">
+      <div class="scroll-container">
+        <a id="bannerText" href="#affiliation"></a>
+      </div>
+
+      <div class="tsa-links">
+        <a href="https://tsaweb.org">National TSA</a>
+        <a href="https://store.tsaweb.org">TSA Store</a>
+      </div>
+    </div>
+
+    <!-- Sticky navbar -->
+    <nav id="main-nav">
+      <div class="logo">
+        <a href="index.html"><img src="TSA_logo_white.png" /></a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu">
+            <a href="competitions.html" class="dropdown-link">Competitions</a>
+            <a href="middle-school-competitions.html" class="dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown-item">
+          <span class="dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </span>
+          <div class="dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
+      </ul>
+      <ul class="mobile-nav" id="mobileNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Competitions
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu">
+            <a href="competitions.html" class="mobile-dropdown-link"
+              >Competitions</a
+            >
+            <a
+              href="middle-school-competitions.html"
+              class="mobile-dropdown-link"
+              >Middle School Competitions</a
+            >
+          </div>
+        </li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="mobile-dropdown-item">
+          <span class="mobile-dropdown-toggle">
+            Resources
+            <i class="fas fa-chevron-down mobile-dropdown-arrow"></i>
+          </span>
+          <div class="mobile-dropdown-menu"></div>
+        </li>
+        <li><a href="support-us.html">Support Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="info-section">
+      <!-- Title -->
+      <div class="hero">
+        <h1>About ND TSA</h1>
+      </div>
+
+      <!-- Mission Statement loaded from JSON -->
+      <div id="mission-container"></div>
+
+      <!-- Creed loaded from JSON -->
+      <div id="creed-container"></div>
+
+      <!-- History loaded from JSON -->
+      <div id="history-container"></div>
+
+      <!-- State Officer Team -->
+      <h2 style="color: #175ba7; margin-top: 40px; margin-bottom: 30px">
+        State Officer Team 2025–26
+      </h2>
+
+      <!-- Officers loaded from about.json -->
+      <div id="officers-container"></div>
+
+      <!-- Advisory Council loaded from JSON -->
+      <div id="advisory-council-container"></div>
+
+      <!-- Documents loaded from JSON -->
+      <div id="documents-container"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p id="contact-name"></p>
+          <p>
+            Email:
+            <a id="contact-email" href="#"></a>
+          </p>
+          <p>
+            Office:
+            <a id="contact-phone" href="#"></a>
+          </p>
+          <p id="contact-address"></p>
+        </div>
+
+        <!-- Optional banner element -->
+        <div class="banner"></div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul id="quick-links-list"></ul>
+        </div>
+
+        <!-- ND TSA Description -->
+        <div class="footer-description">
+          <h3>About ND TSA</h3>
+          <p>
+            North Dakota TSA is sponsored as part of Career and Technical
+            Education programs through the ND Department of Career and Technical
+            Education.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="footer-note">Built for ND TSA © ND TSA 2025</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Load ALL content from about.json
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("about.json")
+          .then((response) => response.json())
+          .then((aboutData) => {
+            console.log("About data loaded:", aboutData);
+
+            // Load Mission Statement
+            const missionContainer =
+              document.getElementById("mission-container");
+            if (missionContainer && aboutData.missionStatement) {
+              missionContainer.innerHTML = `
+                <div class="centered-section">
+                  <h2>Mission Statement</h2>
+                  <p>${aboutData.missionStatement}</p>
+                </div>
+              `;
+            }
+
+            // Load Creed
+            const creedContainer = document.getElementById("creed-container");
+            if (creedContainer && aboutData.creed) {
+              const creedHtml = aboutData.creed
+                .map((line) => `<p>"${line}"</p>`)
+                .join("");
+              creedContainer.innerHTML = `
+                <div class="centered-section">
+                  <h2>Creed</h2>
+                  ${creedHtml}
+                </div>
+              `;
+            }
+
+            // Load History
+            const historyContainer =
+              document.getElementById("history-container");
+            if (historyContainer && aboutData.history) {
+              const hist = aboutData.history;
+              const chaptersHtml = hist.originalChapters
+                .map((chapter) => `<li>${chapter}</li>`)
+                .join("");
+              historyContainer.innerHTML = `
+                <div class="centered-section">
+                  <h2>History of ND TSA</h2>
+                  <p><strong>Founded:</strong> ${hist.founded}</p>
+                  <p><strong>${hist.chartered}</strong></p>
+                  <p><strong>Started with ${hist.startingSchools} schools</strong></p>
+                  <h3>Original ${hist.startingSchools} Chapters:</h3>
+                  <ul class="centered-list">
+                    ${chaptersHtml}
+                  </ul>
+                  <p><strong>Description:</strong> ${hist.description}</p>
+                </div>
+              `;
+            }
+
+            // Load State Officers
+            const officersContainer =
+              document.getElementById("officers-container");
+            if (officersContainer && aboutData.stateOfficers) {
+              officersContainer.innerHTML = aboutData.stateOfficers
+                .map((officer, index) => {
+                  const isEvenIndex = index % 2 === 0;
+                  const imageHtml = `<div class="image"><img src="${officer.image}" alt="${officer.name} - ${officer.position}" /></div>`;
+                  const textHtml = `
+                    <div class="text">
+                      <h3>${officer.name} – ${officer.position}</h3>
+                      <p>"${officer.bio}"</p>
+                    </div>
+                  `;
+                  return `
+                    <div class="info-block officer-block">
+                      ${
+                        isEvenIndex
+                          ? textHtml + imageHtml
+                          : imageHtml + textHtml
+                      }
+                    </div>
+                  `;
+                })
+                .join("");
+            }
+
+            // Load Advisory Council
+            const advisoryContainer = document.getElementById(
+              "advisory-council-container"
+            );
+            if (advisoryContainer && aboutData.advisoryCouncil) {
+              const council = aboutData.advisoryCouncil;
+              const currentHtml = council.current
+                .map((member) => `<li>${member.name} – ${member.school}</li>`)
+                .join("");
+              const pastHtml = council.past
+                .map(
+                  (member) =>
+                    `<li>${member.name}${
+                      member.role ? " – " + member.role : ""
+                    }</li>`
+                )
+                .join("");
+              advisoryContainer.innerHTML = `
+                <div class="centered-section" style="margin-top: 40px">
+                  <h2>Advisory Council</h2>
+                  <h3>${council.current[0].years}:</h3>
+                  <ul class="two-column-list">
+                    ${currentHtml}
+                  </ul>
+                  <button class="toggle-past-members" onclick="togglePastMembers(this)">Show Past Members</button>
+                  <div class="past-members-content" style="display: none;">
+                    <h3>Past Members (${council.past[0].years}):</h3>
+                    <ul class="two-column-list">
+                      ${pastHtml}
+                    </ul>
+                  </div>
+                </div>
+              `;
+            }
+
+            // Load Documents
+            const documentsContainer = document.getElementById(
+              "documents-container"
+            );
+            if (documentsContainer && aboutData.documents) {
+              const docsHtml = aboutData.documents
+                .map(
+                  (doc) =>
+                    `<li><a href="${doc.url}" target="_blank">${doc.title}</a></li>`
+                )
+                .join("");
+              documentsContainer.innerHTML = `
+                <div class="centered-section" style="margin-top: 40px">
+                  <h2>Official Documents</h2>
+                  <p>Learn more about ND TSA's governance and expectations:</p>
+                  <ul class="centered-list">
+                    ${docsHtml}
+                  </ul>
+                </div>
+              `;
+            }
+          })
+          .catch((error) => console.error("Error loading about.json:", error));
+      });
+
+      // Toggle Past Members Function
+      function togglePastMembers(button) {
+        const pastContent = button.nextElementSibling;
+        const isHidden = pastContent.style.display === "none";
+
+        if (isHidden) {
+          pastContent.style.display = "block";
+          button.textContent = "Hide Past Members";
+        } else {
+          pastContent.style.display = "none";
+          button.textContent = "Show Past Members";
+        }
+      }
+    </script>
+  </body>
+</html>

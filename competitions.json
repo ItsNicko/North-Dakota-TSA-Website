@@ -1,0 +1,213 @@
+[
+  {
+    "name": "Animatronics",
+    "description": "To address the annual design challenge, participants exhibit and demonstrate their knowledge of mechanical and control systems by creating an animatronic device with a specific purpose (i.e., communicate an idea, entertain, demonstrate a concept, etc.) that includes sound, lights, and an appropriate surrounding environment (a display).",
+    "theme": "Time Travelers' Museum. Create an animatronic figure or scene from a key moment in American history. The character should \"come to life\" to explain their world to a young audience. Designed for a children's museum or educational tour."
+  },
+  {
+    "name": "Architectural Design",
+    "description": "In response to the annual design challenge, participants develop a set of architectural plans and related materials, and construct both a physical and computer-generated model to accurately depict their design. Semifinalists deliver a presentation and participate in an interview.",
+    "theme": {
+      "text": "See linked document",
+      "url": "https://tsaweb.org/docs/default-source/competitions/themes-and-problems-2025-2026/2026-architectural-design-problem.pdf?sfvrsn=4af21af4_1"
+    }
+  },
+  {
+    "name": "Audio Podcasting",
+    "description": "Participants use digital audio technology to create original content for a podcast piece that addresses the annual theme. The podcast must feature high level storytelling techniques, voice acting, and folly sound effects; the full entry must include documentation of the podcast development process and elements. Semifinalists participate in an interview.",
+    "theme": "History or Mystery. Students create an audio podcast that focuses on a real-life or fictitious historical event from the past."
+  },
+  {
+    "name": "Biotechnology Design",
+    "description": "Participants select a contemporary biotechnology problem that addresses the annual theme and demonstrates understanding of the topic through documented research, the development of a solution, a display (including an optional model or prototype), and an effective multimedia presentation. Semifinalists deliver a presentation and participate in an interview.",
+    "theme": "Bioconjugation. Highlight the science behind bioconjugation and demonstrate one of its many uses."
+  },
+  {
+    "name": "Board Game Design",
+    "description": "Participants develop, build, and package a board game that focuses on a subject of their choice. Creative packaging, and the instructions, pieces, and cards associated with the pilot game will be evaluated. Semifinalists set up the game, demonstrate how the game is played, explain the game's features, and discuss the design process.",
+    "theme": "No theme for this event."
+  },
+  {
+    "name": "Chapter Team",
+    "description": "Participants take a parliamentary procedure test to qualify for the semifinal round of competition. Semifinalists conduct an opening ceremony, items of business, parliamentary actions, and a closing ceremony.",
+    "theme": "No theme for this event."
+  },
+  {
+    "name": "Children's Stories",
+    "description": "In response to the annual theme, participants create an illustrated children's story of artistic, instructional, and social value, and submit documentation related to the development of the physical storybook. Semifinalists read their story aloud and participate in an interview.",
+    "theme": "Students develop and produce a non-fiction, die-cut board book"
+  },
+  {
+    "name": "Coding",
+    "description": "Participants take a test, which concentrates on aspects of coding, to qualify for the semifinal round of competition. Semifinalists develop a software program - in a designated amount of time - that accurately addresses an onsite problem.",
+    "theme": "Languages allowed: C17, C++20, C# 8, Java 21, Javascript/Node 18.19, Python 3.9, Ruby 3.2, Rust 1.75, Swift 5.10"
+  },
+  {
+    "name": "Computer-Aided Design (CAD), Architecture",
+    "description": "Participants use complex computer graphic skills, tools, and processes to respond to a design challenge in which they develop representations of architectural subjects such as foundation/floor plans, elevation drawings, or architectural details.",
+    "theme": "No theme for this event."
+  },
+  {
+    "name": "Computer-Aided Design (CAD), Engineering",
+    "description": "Participants use complex computer graphic skills, tools, and processes to respond to a design challenge in which they develop 3D representations of engineering subjects such as machine parts, tools, devices, or manufactured products.",
+    "theme": "No theme for this event."
+  },
+  {
+    "name": "Data Science and Analytics",
+    "description": "Participants identify a societal issue, collect or compile data from various sources, and produce documentation and a digital scientific poster. Semifinalists create a synopsis and visual representation of a provided data set.",
+    "theme": "Analyze a tourism-related open-source dataset. Cite dataset source, URL/domain, and file format."
+  },
+  {
+    "name": "Debating Technological Issues",
+    "description": "Participants research the annual topic and subtopics and debate teams from other chapters. Teams prepare references and must argue pro or con as assigned.",
+    "theme": "Artificial Intelligence and Ethics. Subtopics: (1) AI judicial decision-making and bias. (2) AGI existential threats vs nuclear weapons. (3) AI-generated art reducing authenticity."
+  },
+  {
+    "name": "Digital Video Production",
+    "description": "Participants develop and submit a digital video with storyboards, script, source summary, and equipment list that reflects the annual theme. Semifinalists interview.",
+    "theme": "\"A Twist in Time\". Create a story that alters a key historical moment or brings a past character into modern times."
+  },
+  {
+    "name": "Dragster Design",
+    "description": "Participants design, draw, and construct a CO2-powered dragster following specifications and documentation requirements. Semifinalists compete in races and interview.",
+    "theme": "No theme for 2026; follow official specifications."
+  },
+  {
+    "name": "Drone Challenge (UAV)",
+    "description": "Participants design, build, assemble, document, and test fly an open-source UAV. Documentation includes a log, wiring schematics, and programming explanation. Semifinalists interview.",
+    "theme": {
+      "text": "See linked problem document",
+      "url": "https://tsaweb.org/docs/default-source/competitions/themes-and-problems-2025-2026/2026-hs_uav-drone.pdf?sfvrsn=28e74e45_3"
+    }
+  },
+  {
+    "name": "Engineering Design",
+    "description": "Participants develop a solution to an annual theme based on National Academy of Engineering grand challenges. Includes portfolio, display, and model/prototype. Semifinalists present and interview.",
+    "theme": "Engineering the tools of scientific discovery"
+  },
+  {
+    "name": "Extemporaneous Speech",
+    "description": "Participants draw a tech-related topic card and prepare a 3–5 minute speech. Quality of delivery determines advancement.",
+    "theme": "No theme for this event."
+  },
+  {
+    "name": "Fashion Design and Technology",
+    "description": "Participants create a wearable garment following the annual theme, with patterns and documentation. Semifinalists present garments (worn by models) and interview.",
+    "theme": "Villain Era, with one main garment element being 3D printed."
+  },
+  {
+    "name": "Flight Endurance",
+    "description": "Participants design, build, and fly a rubber-powered model aircraft for maximum flight time.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "Forensic Science",
+    "description": "Teams analyze a mock crime scene and complete a written test before presenting findings.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "Future Technology Teacher",
+    "description": "Contestants deliver a lesson they designed that demonstrates effective technology education teaching.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "Geospatial Technology",
+    "description": "Teams use GIS data to solve a real-world mapping or spatial-analysis problem and present their findings.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "Manufacturing Prototype",
+    "description": "Participants identify a manufacturing problem, design a prototype, document their work, and present a finished product.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "Music Production",
+    "description": "Teams create an original music composition with documentation explaining tools, process, and techniques.",
+    "theme": "Around the World — compose music inspired by cultural or geographic themes."
+  },
+  {
+    "name": "On Demand Video",
+    "description": "Participants receive a topic onsite and must script, shoot, and edit a short video within the time limit.",
+    "theme": "Onsite theme provided at competition."
+  },
+  {
+    "name": "Photographic Technology",
+    "description": "Competitors produce a photography portfolio, pass a written test, and complete onsite photo challenges.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "Prepared Presentation",
+    "description": "Contestants develop and deliver a 3-5 minute speech about a technology-related topic with supporting documentation.",
+    "theme": "A Blueprint for the Future — explore a vision for tomorrow’s technological landscape."
+  },
+  {
+    "name": "Promotional Design",
+    "description": "Participants design a promotional graphic series (poster set, branding suite, etc.) for the annual theme.",
+    "theme": "Innovation Starts Here — create promotional graphics reflecting the conference theme."
+  },
+  {
+    "name": "Robotics (Software)",
+    "description": "Teams program a virtual robot to solve challenges using provided simulation software.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "Scientific Visualization (SciVis)",
+    "description": "Participants create a 3D visualization or animation that explains a science concept through accurate modeling.",
+    "theme": "Visualize a breakthrough in renewable energy technology."
+  },
+  {
+    "name": "Software Development",
+    "description": "Teams create an original software application with a full development log, UI/UX design, and working prototype.",
+    "theme": "Create a tool that solves or improves a school-related problem."
+  },
+  {
+    "name": "Structural Design & Engineering",
+    "description": "Teams build and test a structure (usually a bridge or tower) and defend their engineering decisions.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "System Control Technology",
+    "description": "Teams solve a real-time systems control challenge using controllers, sensors, and actuators.",
+    "theme": "Onsite challenge released at competition."
+  },
+  {
+    "name": "Technology Bowl",
+    "description": "Participants take a written exam on technology content and compete in a buzzer-based quiz round.",
+    "theme": "See event PDF for study sections."
+  },
+  {
+    "name": "Technology Problem Solving",
+    "description": "Teams work onsite to solve a hands-on design-and-build challenge with limited materials.",
+    "theme": "Onsite challenge provided at competition."
+  },
+  {
+    "name": "Transportation Modeling",
+    "description": "Participants design and build a scale transportation system model and document the design process.",
+    "theme": "See event PDF."
+  },
+  {
+    "name": "VEX Robotics",
+    "description": "Teams design, build, and operate a VEX robot to compete in the annual game and complete documentation.",
+    "theme": "Official VEX Robotics annual game challenge."
+  },
+  {
+    "name": "Video Game Design",
+    "description": "Teams create an original game with documentation, narrative development, functional gameplay, and presentation.",
+    "theme": "ChronoQuest — a game themed around time manipulation or time travel."
+  },
+  {
+    "name": "Website Design",
+    "description": "Participants design and build a functional website that addresses the annual theme, with documentation of the development process. Semifinalists present their website and participate in an interview.",
+    "theme": "Bridging the Past and Future — create a website that explores historical innovations and their impact on future technologies."
+  },
+  {
+    "name": "Virtual Reality Simulation (VR)",
+    "description": "Participants use video and 3D computer graphics tools and design processes to create a two‑to‑three‑minute VR visualization (accompanied by supporting documentation) that addresses the annual theme. Semifinalists deliver a presentation about their visualization and participate in an interview.",
+    "theme": "Design an interactive, walk-through VR museum based on a topic in art, history, or technology."
+  },
+  {
+    "name": "Webmaster",
+    "description": "Participants design, build, and launch a website that addresses the annual challenge. Semifinalists participate in an interview to demonstrate the knowledge and expertise gained during the development of the website.",
+    "theme": "Community Resource Hub — Create a website that will serve as a community resource hub to highlight resources available to residents within the community (e.g., non‑profits, support services, community events and programs). Website must include an interactive directory of resources, a highlight section for at least three resources, a form to submit new resources, and additional content."
+  }
+]
