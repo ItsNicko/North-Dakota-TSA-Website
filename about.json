@@ -1,6 +1,5 @@
 {
   "missionStatement": "The mission of the North Dakota Technology Student Association is to prepare the membership for the challenges of a dynamic world by promoting technological literacy, leadership, service, and problem solving resulting in personal growth and opportunities.",
-
   "creed": [
     "I believe that Technology Education holds an important place in my life in the technical world. I believe there is a need for the development of good attitudes concerning works, materials, experimentation, and processes of industry.",
     "Guided by my teachers, artisans from industry, and my own initiative, I will strive to do my best in making my school, community, state, and nation better places in which to live.",
@@ -9,7 +8,6 @@
     "Through the work of my hands and mind, I will express my ideas to the best of my ability.",
     "I will make it my goal to do better each day the task before me, and to be steadfast in my belief in my God, and my fellow Americans."
   ],
-
   "history": {
     "founded": 1997,
     "chartered": "Chartered with National TSA",
@@ -28,14 +26,13 @@
     ],
     "description": "TSA provides students in grades 6–12 with leadership and service opportunities, as well as competitive events in technology and engineering education."
   },
-
   "stateOfficers": [
     {
       "name": "Ashley Carr",
       "position": "President",
       "school": "Minot North High School",
       "year": "Junior",
-      "image": "images/Ashley_Carr.jpg",
+      "image": "https://itsnicko.github.io/North-Dakota-TSA-Website/images/1763180307818-WIN_20251113_19_04_21_Pro.jpg",
       "bio": "Hi guys! I'm Ashley Carr, and I'm your 2025-26 NDTSA President. I am so excited to be back this year! It's my third year in TSA and my second year as a state officer. A little bit about me: I'm a junior at Minot North High School. At my school, I'm actively involved in cheerleading, Science Olympiad, Student Council, National Honor Society, and, of course, TSA. In my free time, I enjoy hanging out with friends, playing piano, and serving on my church's worship team. Can't wait for another great year!"
     },
     {
@@ -79,7 +76,6 @@
       "bio": "Hello everyone! I'm Brenden Longie, your new 2025-2026 State Secretary. This is my second year in TSA and I'm really excited to be serving as a state officer for the first time. When I'm not focused on my schoolwork or TSA events, you can find me trapshooting, farming, or just hanging out with friends. I'm excited to take on this new journey and work with all of you!"
     }
   ],
-
   "advisoryCouncil": {
     "current": [
       {
@@ -123,7 +119,6 @@
       }
     ]
   },
-
   "documents": [
     {
       "title": "Constitution",
