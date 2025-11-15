@@ -122,15 +122,15 @@
   "documents": [
     {
       "title": "Constitution",
-      "url": "PDFs/NDTSA-Constitution.pdf"
+      "url": "pdfs/NDTSA-Constitution.pdf"
     },
     {
       "title": "By-Laws",
-      "url": "PDFs/NDTSA-By-Laws.pdf"
+      "url": "pdfs/NDTSA-By-Laws.pdf"
     },
     {
       "title": "Code of Conduct & Dress Code",
-      "url": "PDFs/NSTSA-Code-Of-Conduct.pdf"
+      "url": "pdfs/NSTSA-Code-Of-Conduct.pdf"
     }
   ]
 }
