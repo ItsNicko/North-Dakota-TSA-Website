@@ -35,6 +35,16 @@
         "hotel_reservations": "Hotel reservations for the conference will open in January 2026",
         "conference_registration": "Conference registration will open in March 2026"
       }
+    },
+    {
+      "name": "New Event",
+      "location": "",
+      "dates": {
+        "start": "",
+        "end": ""
+      },
+      "deadlines": [],
+      "notes": {}
     }
   ]
 }
