@@ -17,7 +17,8 @@
           "date": "2026-02-04",
           "note": "No New Events Will Be Added After This Date"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "name": "Fall Leadership Conference",
@@ -34,7 +35,8 @@
       "notes": {
         "hotel_reservations": "Hotel reservations for the conference will open in January 2026",
         "conference_registration": "Conference registration will open in March 2026"
-      }
+      },
+      "deadlines": []
     },
     {
       "name": "New Event",
