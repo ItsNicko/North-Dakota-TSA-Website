@@ -37,16 +37,6 @@
         "conference_registration": "Conference registration will open in March 2026"
       },
       "deadlines": []
-    },
-    {
-      "name": "New Event",
-      "location": "",
-      "dates": {
-        "start": "",
-        "end": ""
-      },
-      "deadlines": [],
-      "notes": {}
     }
   ]
 }
