@@ -19,8 +19,8 @@
   ],
   "Resources": [
     {
-      "title": "what am i doing",
-      "url": "https://www.google.com"
+      "title": "TSA Pins",
+      "url": "https://tsapins.org/"
     },
     {
       "title": "example",
@@ -39,9 +39,13 @@
     "Name": "Bradley Hoffarth, ND TSA State Advisor",
     "Email": "tsa@nd.gov",
     "Phone": "7013283159",
-    "Address": ["600 E Boulevard Ave", "Dept. 270 Bismarck", "ND 58505-0610"]
+    "Address": [
+      "600 E Boulevard Ave",
+      "Dept. 270 Bismarck",
+      "ND 58505-0610"
+    ]
   },
   "Banner": "2024-2025 TSA Chapter Affiliation Opens On: 09/09/2024",
   "BannerLink": "https://tsamembership.registermychapter.com/",
-  "BannerRedirect": false
+  "BannerRedirect": true
 }
