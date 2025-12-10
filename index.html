@@ -9,38 +9,240 @@
       type="image/png"
       href="TSA-Technology-Student-Association-Emblem.png"
     />
-
-    <!-- Manrope font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome for social icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Modern index.html styling */
+      .hero-image {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        background: linear-gradient(135deg, #175ba7 0%, #0d3d7a 100%);
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.7;
+      }
+
+      .info-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .info-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 60px;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        border: 1px solid rgba(23, 91, 167, 0.08);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .info-block:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-block:nth-child(even) {
+        direction: rtl;
+      }
+
+      .info-block:nth-child(even) .text,
+      .info-block:nth-child(even) .image {
+        direction: ltr;
+      }
+
+      .info-block .text h2 {
+        font-size: 1.8rem;
+        color: #175ba7;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .info-block .text h3 {
+        font-size: 1.3rem;
+        color: #0d3d7a;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .info-block .text p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 12px;
+      }
+
+      .info-block .image {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(23, 91, 167, 0.15);
+      }
+
+      .info-block .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .hero-image {
+          height: 300px;
+        }
+
+        .info-block {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding: 25px;
+          margin-bottom: 30px;
+        }
+
+        .info-block:nth-child(even) {
+          direction: ltr;
+        }
+
+        .info-block .text h2 {
+          font-size: 1.5rem;
+        }
+
+        .info-block .text h3 {
+          font-size: 1.1rem;
+        }
+      }
+      .hero-image {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        background: linear-gradient(135deg, #175ba7 0%, #0d3d7a 100%);
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.7;
+      }
+
+      .info-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .info-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 60px;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        border: 1px solid rgba(23, 91, 167, 0.08);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .info-block:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-block:nth-child(even) {
+        direction: rtl;
+      }
+
+      .info-block:nth-child(even) .text,
+      .info-block:nth-child(even) .image {
+        direction: ltr;
+      }
+
+      .info-block .text h2 {
+        font-size: 1.8rem;
+        color: #175ba7;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .info-block .text h3 {
+        font-size: 1.3rem;
+        color: #0d3d7a;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .info-block .text p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 12px;
+      }
+
+      .info-block .image {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(23, 91, 167, 0.15);
+      }
+
+      .info-block .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .hero-image {
+          height: 300px;
+        }
+
+        .info-block {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding: 25px;
+          margin-bottom: 30px;
+        }
+
+        .info-block:nth-child(even) {
+          direction: ltr;
+        }
+
+        .info-block .text h2 {
+          font-size: 1.5rem;
+        }
+
+        .info-block .text h3 {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- Custom cursor -->
-    <!-- <div class="cursor"></div> -->
-
-    <!-- Top banner -->
     <div id="top-banner">
       <div class="scroll-container">
         <a id="bannerText" href="#affiliation"></a>
       </div>
-
       <div class="tsa-links">
         <a href="https://tsaweb.org">National TSA</a>
         <a href="https://store.tsaweb.org">TSA Store</a>
       </div>
     </div>
 
-    <!-- Sticky navbar -->
     <nav id="main-nav">
       <div class="logo">
         <a href="index.html"><img src="TSA_logo_white.png" /></a>
@@ -108,12 +310,10 @@
       </ul>
     </nav>
 
-    <!-- Hero image -->
     <div class="hero-image">
       <img src="hero.jpg" alt="Hero Banner" />
     </div>
 
-    <!-- Social sidebar -->
     <ul class="social-sidebar">
       <li
         onclick="window.open('https://www.instagram.com/northdakotatsa/', '_blank')"
@@ -204,7 +404,6 @@
 
     <footer class="footer">
       <div class="footer-container">
-        <!-- Contact Information -->
         <div class="footer-contact">
           <h3>Contact</h3>
           <p id="contact-name"></p>
@@ -218,17 +417,11 @@
           </p>
           <p id="contact-address"></p>
         </div>
-
-        <!-- Optional banner element -->
         <div class="banner"></div>
-
-        <!-- Quick Links -->
         <div class="footer-links">
           <h3>Quick Links</h3>
           <ul id="quick-links-list"></ul>
         </div>
-
-        <!-- ND TSA Description -->
         <div class="footer-description">
           <h3>About ND TSA</h3>
           <p>
@@ -238,8 +431,6 @@
           </p>
         </div>
       </div>
-
-      <!-- Footer Note -->
       <div class="footer-note">Built for ND TSA © ND TSA 2025</div>
     </footer>
 
