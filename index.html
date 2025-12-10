@@ -264,13 +264,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        background-image: linear-gradient(
-          90deg,
-          #ffffff,
-          #8fd3ff,
-          #c7a9ff,
-          #ffffff
-        );
+        background-image: linear-gradient(90deg, #e0402b, #175ba7, #e0402b);
         background-size: 200% 100%;
         animation: holoShift 3s linear infinite;
         opacity: 1;
@@ -507,36 +501,15 @@
 
     <script src="script.js"></script>
     <script>
-      (function () {
-        const words = [
-          "builders",
-          "innovators",
-          "thinkers",
-          "designers",
-          "architects",
-        ];
-        let idx = 0;
-        const span = document.querySelector(".hero-overlay .rotating");
-        if (!span) return;
-        span.textContent = words[0];
-        span.classList.add("fade-in");
-        setInterval(() => {
-          span.classList.remove("fade-in");
-          span.classList.add("fade-out");
-          setTimeout(() => {
-            idx = (idx + 1) % words.length;
-            span.textContent = words[idx];
-            span.classList.remove("fade-out");
-            span.classList.add("fade-in");
-          }, 420);
-        }, 2800);
-      })();
-    </script>
-    <script src="script.js"></script>
-    <script>
       //rotates to next word
       (function () {
-        var w = ["builder", "innovator", "thinker", "designer", "architect"],
+        var w = [
+            "builders",
+            "innovators",
+            "thinkers",
+            "designers",
+            "architects",
+          ],
           i = 0,
           s = document.querySelector(".hero-overlay .rotating");
         if (!s) return;
